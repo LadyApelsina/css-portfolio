@@ -1,0 +1,254 @@
+:root {
+    --primary: #df6108;
+
+    --main-font: "Sacramento", cursive;
+    --p-font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+
+
+
+/*
+nav {
+ /*   margin-bottom: 30px;  */
+/*}
+
+main {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-bottom: 3.125rem;
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 2;
+}
+
+aside {
+    margin-top: 2.5rem;  
+    display: flex;
+    flex-direction: column;
+}
+
+.aside p {
+    font-size: 20px;
+}
+
+.card-container {
+    width: 250px;
+    box-shadow: 0px 0px 5px 3px #c75513;
+    border-radius: 5px;
+    background-color: #0a0a0a;
+    backdrop-filter: blur(100px);
+/*    margin-right: 1.25rem;
+    margin-top: 60px; */
+ /*   padding: 10px;
+/*    align-self: center; */
+/*
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+
+}
+
+.card-content {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+.card-container h2{
+    font-size: 30px;
+    margin: 5px;
+    text-align: center;
+}
+
+.card-container p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+fieldset {
+    padding: 3px;
+    color: var(--primary);
+    border-radius: 3px;
+    border: 1px dotted var(--primary);
+}
+
+fieldset label {
+    color: var(--primary);
+}
+
+fieldset input {
+    margin: 3px;
+    background-color: transparent;
+    color: var(--primary);
+}
+
+textarea {
+    background-color: transparent;
+    color: var(--primary);
+}
+
+textarea:active {
+    border: 1px solid pink;
+}
+
+#myfile {
+    width: 230px;
+}
+
+.send-box input {
+    width: 50px;
+    border-radius: 3px;
+    border: 1px solid var(--primary);
+    background-color: #c75513;
+    margin: 10px 10px 0px 0px;
+}
+
+.send-box input:hover {
+    color: var(--primary);
+    background-color: #010101;
+    border: 1px solid var(--primary);
+    box-shadow: 0px 0px 5px 1px var(--primary);
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;  
+}
+
+section {
+    gap: 1.5rem;
+}
+
+.section-container h3 {
+    font-size: 2.188rem;
+    font-weight: 500;
+    height: 100px;
+    display: flex;
+    align-self: center; 
+}
+
+section h3 {
+    font-size: 1.75rem;
+    text-align: center;
+    margin: 0;
+}
+
+section p {
+    font-size: 18px;
+    margin: 0.313rem;
+    font-variant: normal;
+}
+
+article {
+    color: var(--primary);
+    border: 1px solid #795226;
+    border-radius: 3px;
+    background-color: #010101;
+    box-shadow: 0px 0px 5px 3px #c75513;
+}
+
+#article-1 {
+    padding: 0.625rem;   
+}
+
+#article-1 h3 {
+    text-decoration: underline;
+}
+
+#article-1 li {
+    list-style-type: circle;
+    margin: 0.625rem;
+    color: var(--primary);
+    font-size: 18px;
+}
+
+#article-2 {
+    font-family: var(--p-font);
+    text-align: left;
+    padding: 0.5rem;
+}
+
+#article-2 img {
+    width: 9.375rem;
+}
+
+#article-2 p {
+    margin-top: 0.625rem;
+}
+
+
+
+#article-3 h3 {
+    text-align: left;
+    text-decoration: underline;
+    padding: 0;
+}
+
+#article-3 img {
+    width: 12.5rem;
+    padding: 0.625rem;
+}
+
+@media screen and (min-width:200px) {
+ 
+section {
+    display: flex;
+    flex-direction: column;
+}      
+}
+
+
+@media screen and (min-width:870px) {
+
+main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 1.25rem;
+    }
+
+.card-container {
+    align-self: flex-start;
+    margin-top: 170px;
+}
+.section-container {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    }
+
+.section-container h2 {
+    display: flex;
+    align-self: center;
+    }
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    }
+
+#article-3 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 1;
+}
+}
+

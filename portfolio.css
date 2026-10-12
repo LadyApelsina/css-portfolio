@@ -1,0 +1,162 @@
+.nav-meny {
+   gap: 0.313rem;
+}
+
+.f-drop-btn {
+    background-color: #010101;
+    color: var(--primary);
+    box-shadow: -2px 0px 15px var(--primary);
+    height: 1.85rem;
+    width: 4.375rem;
+    letter-spacing: 1px;
+    font-size: 1.03rem;
+    font-family: var(--p-font);
+    border: 1px solid #a05a21;
+    border-radius: 3px; 
+    cursor: pointer;
+}
+
+.f-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.f-dropdown-con {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #010101;
+    border: 1px solid var(--primary);
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.reset-btn {
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+    color: var(--primary);
+}
+
+.reset-btn:hover {
+    color: #010101;
+    background-color: var(--primary);
+}
+
+.f-dropdown-con form {
+    color: var(--primary);
+    padding: 12px 16px;
+    display: block;
+}
+
+.f-dropdown-con form legend {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.f-dropdown-con form input {
+    margin-top: 15px;
+}
+
+.f-dropdown:hover .f-dropdown-con {
+    display: block;
+}
+
+.f-dropdown:hover .f-drop-btn {
+    box-shadow: -2px 2px 8px var(--primary);
+    transform: scale(1.01);
+    border-radius: 3px;
+}
+
+main {
+    flex-direction: column; 
+    align-items: center;
+}
+
+main h2 {
+    margin: 10px;
+    padding: 0;
+    font-size: 2.188rem;
+    font-weight: 400;
+}
+
+.kategorier {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+    margin: 1.875rem;
+    box-shadow: 0px 0px 5px 3px #c75513;
+}
+
+.kategorier h3 {
+    width: 10rem;
+    font-size: 2.25rem;
+    text-align: center;
+    border-bottom: 2px dotted #ec732d;
+    border-top: 2px dotted #ec732d;
+}
+
+.kategori-box {
+    background-color: #010101;
+    box-shadow: 0 0 5px 1px #965812;
+    height: 175px;
+    width: 125px;
+    margin: 10px;
+    text-align: center;
+    transition: transform .2s;
+}
+
+.kategori-box:hover {
+    transform: scale(1.1);
+}
+
+.kategori-box a {
+    color: var(--primary);
+    font-size: 18px;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+.kategori-box img {
+    height: 125px;
+}
+
+@media screen and (min-width:550px) {
+
+.kategorier {
+    width: 600px;
+    flex-direction: row;
+    height: 210px;
+    }
+
+.kategori-box {
+    margin: 0;
+    width: 100px;
+    }
+
+.kategori-box img {
+    height: 100px;
+    }
+}
+
+@media screen and (min-width:900px) {
+
+    
+.kategorier {
+    width: 900px;
+    flex-direction: row;
+    height: 250px;
+    }
+
+.kategori-box {
+    height: 175px;
+    width: 125px;
+    }
+
+.kategori-box img {
+    height: 125px;
+}
+}
